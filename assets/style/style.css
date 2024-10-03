@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav,
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: #2c3e50;
+    color: white;
+
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    opacity: 95%;
+
+}
+/* for med and small screens */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    right: -50px;
+    margin-top: 20%;
+    min-width: fit-content;
+    box-shadow: 6px 2px 5px 3px white;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #374859;
+    ;
+}
+
+.dropdown .dropbtn {
+    background-color: #374859;
+    ;
+    border: none;
+    font-size: 16px;
+    color: white;
+
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.left-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    flex-grow: 0.1;
+}
+
+.left-nav-wrapper a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+/*  */
+
+.hero {
+    height: 100vh;
+    background-color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: end;
+}
+
+.hero img {
+    transform: translate(22px, -24px);
+    width: 157px;
+}
+
+.hero .img-background {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(28, 24, 19);
+    margin: 20px;
+}
+
+.hero h2 {
+    font-size: xxx-large;
+
+}
+
+.hero p {
+    margin: 20px;
+    font-size: large;
+
+}
+
+.portfolio,
+.about,
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 40px 0;
+    scroll-margin-top: 65px;
+}
+
+.portfolio h2,
+.about h2,
+.contact h2,
+.footer h3 {
+    margin: 15px;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+
+.portfolio .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio .skill {
+    width: 330px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.portfolio .skill img {
+    width: 80px;
+}
+
+.portfolio .skill .skill-bkg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.portfolio .skills-wrapper .html {
+    background-color: #ba4c63;
+}
+
+.portfolio .skills-wrapper .css {
+    background-color: #1fa4b6;
+}
+
+.portfolio .skills-wrapper .js {
+    background-color: #130f0f;
+}
+
+.portfolio .skills-wrapper .bootstrap {
+    background-color: #1d83c1;
+}
+
+.portfolio .skills-wrapper .react {
+    background-color: #1037b5;
+}
+
+.portfolio .skills-wrapper .github {
+    background-color: #ccb2a3;
+}
+
+.about {
+    background-color: #1abc9c;
+    color: white;
+
+}
+
+.about .about-me {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin: 15px;
+    line-height: 1.5rem;
+}
+
+.about .about-me p {
+    width: fit-content;
+    margin: 15px;
+
+}
+
+.about button,
+.contact button {
+    width: fit-content;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    font-size: 15px;
+    padding: 13px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #a0a0a0;
+    padding: 20px 0;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.contact button {
+    align-self: start;
+    border: none;
+}
+
+.footer {
+    align-items: baseline;
+    scroll-margin-top: 65px;
+    padding: 30px;
+}
+
+.footer .footer-div {
+    width: 30%;
+    text-align: center;
+}
+
+.footer h3 {
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+.footer p {
+    line-height: 1.5rem;
+    margin: 5px;
+}
+
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+
+}
+
+.footer .links {
+    padding: 15px;
+}
+
+.footer .links a {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer .freelancer a {
+    color: green;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.star,
+.black-star {
+    margin: 10px;
+    font-size: x-large;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.black-star {
+    color: black;
+}
+
+.star::before,
+.star::after,
+.black-star::before,
+.black-star::after {
+    content: "";
+    width: 75px;
+    height: 3px;
+    background-color: white;
+}
+
+.black-star::before,
+.black-star::after {
+    background-color: rgb(0, 0, 0);
+}
+
+.star::before,
+.black-star::before {
+    margin-right: 10px;
+}
+
+.star::after,
+.black-star::after {
+    margin-left: 10px;
+}
+
+.left-nav-wrapper a:hover {
+    transform: translateY(-5px);
+
+}
+
+button:hover,
+.footer a:hover {
+    box-shadow: 0 0 8px
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    nav .dropdown {
+        display: block;
+    }
+
+    nav .left-nav-wrapper {
+        display: none;
+    }
+
+    .footer,
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-div {
+        width: 80%;
+    }
+}
